@@ -92,6 +92,20 @@ label{
     padding-left:5px;
    }
 }
+@media(min-width:1920px){
+    label{
+        font-size:28px;
+        input,select{
+        margin-left:3%;
+        margin-right:1%;
+        height:6vh;
+        font-size:26px;
+        }
+        input{
+            padding-left:15px;
+        }
+    }
+}
 @media(max-width:732px){
     &{
         height:19vh;

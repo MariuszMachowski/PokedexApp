@@ -117,6 +117,20 @@ div.additionalInfo{
     transform:scale(1);
 }
 }
+@media(min-width:1920px){
+    &{
+        height:28vh;
+    }
+    h2{
+        font-size:34px;
+    }
+    p{
+        font-size:22px;
+    }
+    &.active{
+        height:31vh;
+    }
+}
 @media(max-width:732px){
     &{
         height:35vh;
@@ -211,6 +225,15 @@ font-weight:bold;
 letter-spacing:1px;
 text-transform:uppercase;
 cursor:pointer ;
+@media(min-width:1920px){
+    &{
+        flex-basis:24%;
+        margin:5vh 38%;
+        height:10vh;
+        line-height:10vh;
+        font-size:30px;
+    }
+}
 @media(max-width:732px){
     &{
         flex-basis:30%;
