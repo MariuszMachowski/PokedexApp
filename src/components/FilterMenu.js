@@ -23,7 +23,7 @@ const FilterMenu = ({ type, changeType, list, name, changeName }) => {
         changeType(e.target.value);
     }
     const handleChangeName = (e) => {
-        changeName(e.target.value)
+        changeName(e.target.value.toLowerCase())
     }
     const handleToggleTheme = () => {
         setHide(!hide)
@@ -94,7 +94,7 @@ label{
 }
 @media(max-width:732px){
     &{
-        height:15vh;
+        height:19vh;
     }
     label{
         flex-basis:45%;

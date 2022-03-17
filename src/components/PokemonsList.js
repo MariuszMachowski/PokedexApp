@@ -62,6 +62,11 @@ background:#12344f;
 min-height:50vh;
 border-radius:14px;
 padding:10px 0;
+@media(max-width:1024px) and (orientation:portrait){
+    &{
+        margin: 2% 5% 10% 5%;
+    }
+}
 `
 
 const PokemonContainer = styled.div`
@@ -130,10 +135,10 @@ div.additionalInfo{
 @media(max-width:1024px) and (orientation:portrait){
     &{
         flex-basis:46%;
-        height:25vh;
+        height:26vh;
     }
     &.active{
-        height:28vh;
+        height:29vh;
     }
     h2{
         font-size:34px;
@@ -141,6 +146,15 @@ div.additionalInfo{
     p{
         font-size:24px;
     }
+}
+@media(max-width:1024px) and (orientation:portrait){
+    &{
+        height:30vh;
+    }
+    &.active{
+        height:33vh;
+    }
+ 
 }
 @media(max-width:600px) and (orientation:portrait){
     &{
@@ -157,22 +171,18 @@ div.additionalInfo{
     }
 }
 @media(max-width:412px) and (orientation:portrait){
-    &{
-        height:28vh;
-    }
+
     h2{
         font-size:24px;
     }
     p{
         font-size:14px;
     }
-    &.active{
-        height:32vh;
-    }
+
 }
 @media(max-width:360px) and (orientation:portrait){
     &{
-        height:30vh;
+        height:32vh;
     }
     h2{
         font-size:20px;
@@ -181,7 +191,7 @@ div.additionalInfo{
         font-size:13px;
     }
     &.active{
-        height:34vh;
+        height:36vh;
     }
 }
 `
